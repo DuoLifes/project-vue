@@ -5,7 +5,7 @@
         <a-layout-header><project-header></project-header></a-layout-header>
         <a-layout>
             <!-- 菜单 -->
-            <a-layout-sider>Sider</a-layout-sider>
+            <a-layout-sider><project-menu></project-menu></a-layout-sider>
             <!-- 页面 -->
             <a-layout-content>
                 <!-- 面包屑 -->
@@ -23,12 +23,14 @@
 import Cookies from 'js-cookie'
 import ProjectHeader from '@/components/project-header/project-header.vue'
 import ProjectFooter from '@/components/project-footer/project-footer.vue'
+import ProjectMenu from '@/components/menu/menu.vue'
 import BreadCrumb from '@/components/breadcrumb/breadcrumb.vue'
 export default {
   name: "Layout",
   components: {
     ProjectHeader,
     ProjectFooter,
+    ProjectMenu,
     BreadCrumb
   },
   methods: {
@@ -49,22 +51,19 @@ export default {
   color: #fff;
 }
 .layout .ant-layout-footer {
-  background-color: rgb(51, 51, 51);
+  background-color:#7dbcea;
   color: #fff;
 }
 .layout .ant-layout-footer {
   line-height: 1.5;
 }
 .layout .ant-layout-sider {
-  background: #3ba0e9;
+  background:#001529;
   color: #fff;
   line-height: 120px;
 }
 .layout .ant-layout-content {
   background: #fff(16, 142, 233, 1);
-  color: #fff;
-  min-height: 120px;
-  line-height: 120px;
   height: 600px;
 }
 .layout > .ant-layout {

@@ -31,6 +31,14 @@ module.exports = {
     'quotes': 'off',
     'space-before-function-paren': 'off',
     'comma-dangle': 'off',
-    'no-trailing-spaces': 'off'
+    'no-trailing-spaces': 'off',
+    'space-before-blocks': 'off',
+    'indent': 'off',
+    'no-undef': 'off',
+    'semi': 'off',
+    'arrow-spacing': 'off',
+    'keyword-spacing': 'off',
+    'comma-spacing': 'off',
+    'key-spacing': 'off'
   }
 }

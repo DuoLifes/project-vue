@@ -12,7 +12,7 @@
 </template>
 <script>
 export default {
-  name: "Header",
+  name: "Footer",
   components: {
 
   },
